@@ -1,6 +1,9 @@
-// Set focus on the first text field
+  // Set focus on the first text field
 const firstInput = document.querySelector('input');
 firstInput.focus();
+  // Set t-shirt color options to display none when javascript is active
+const colorShirts = document.querySelector('#colors-js-puns')
+colorShirts.style.display = 'none';
   // remove other job role input if javascript is active
 htmlJobRole = document.getElementById('other-title');
 htmlJobRole.parentNode.removeChild(htmlJobRole);
@@ -196,8 +199,7 @@ userName.addEventListener('focusout', () => {
 	})
   // create a function to validate the form
 
-document.querySelector('button').addEventListener('click', (e) => {
-	e.preventDefault(); // prevent submission on button 
+document.querySelector('button').addEventListener('click', (e) => { 
 	warnings = []; // empty array for form warnings
 	 // set up variables for input validation
 	const nameInput = document.querySelector('input[name="user_name"]'); 
@@ -270,6 +272,7 @@ document.querySelector('button').addEventListener('click', (e) => {
    	}
    	  // if there are any warnings, alert user
    	if (warnings.length > 0) {
+   		e.preventDefault(); // prevent submission on button
    		alert (warnings); // give user an alert of all warnings
-   }
+   } 
 });
