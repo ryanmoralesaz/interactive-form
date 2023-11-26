@@ -1,2 +1,2 @@
-# interactive-form
-Treehouse FSJS project 3
+# Interactive Form Project
+A functional interactive form using javascript and form elements.
